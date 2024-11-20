@@ -1,0 +1,165 @@
+/* Reset básico para garantir consistência entre os navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #4a90e2, #50e3c2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Estilo do container principal */
+.app {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+/* Estilo do título */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Estilo do placar e turnos */
+.score-board {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+.score-board p {
+  margin: 5px 0;
+}
+
+/* Botões para selecionar o modo de jogo */
+.mode-select {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button {
+  
+  padding: 20px 30px;
+  font-size: 1rem;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #3399ff;
+  transform: scale(1.05);
+}
+
+/* Tabuleiro do jogo */
+.board {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 5px;
+}
+
+.square:hover {
+  background-color: #4a90e2;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Alterações de estado (Vitória) */
+.square.x {
+  background-color: #4a90e2;
+  color: #fff;
+}
+
+.square.o {
+  background-color: #50e3c2;
+  color: #fff;
+}
+
+/* Estilos para os botões de reiniciar e próxima rodada */
+.settings-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.settings button {
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 11rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.settings button:hover {
+  background-color: #3399ff;
+  transform: scale(1.05);
+}
+
+/* Estilo da mensagem de vitória ou empate */
+.winner-message {
+  margin-top: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 8px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animação para o fade-in da mensagem */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
