@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+Sobre o Projeto
+Este é um Jogo da Velha interativo desenvolvido com React e estilizado com Bootstrap. Criado para explorar conceitos de desenvolvimento frontend e aplicar as heurísticas de usabilidade de Nielsen, o jogo oferece uma interface intuitiva e amigável, além de ser responsivo para diferentes dispositivos.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Funcionalidades
+Modos de Jogo:
+Jogue contra um amigo localmente.
+Enfrente a máquina com uma lógica de jogadas programada.
+Feedback Visual:
+Indicação do jogador atual (X ou O).
+Mensagens claras de vitória, derrota ou empate.
+Controles Práticos:
+Botões para reiniciar o jogo ou avançar para a próxima rodada.
+Placar persistente entre rodadas.
+Design Responsivo:
+Interface adaptada para telas de desktop, tablets e smartphones.
+Tecnologias Utilizadas
+React: Framework principal para criação da interface interativa.
+Bootstrap: Para design responsivo e estilização.
+CSS Customizado: Ajustes personalizados para garantir estética e funcionalidade.
+Node.js: Configuração do ambiente de desenvolvimento e gerenciamento de dependências.
+Heurísticas de Nielsen Aplicadas
+Visibilidade do Status do Sistema
 
-## Available Scripts
+Exibe o jogador atual, placar e status do jogo em tempo real.
+Controle e Liberdade do Usuário
 
-In the project directory, you can run:
+Permite reiniciar ou avançar para a próxima rodada facilmente.
+Prevenção de Erros
 
-### `npm start`
+Bloqueia jogadas inválidas, como clicar em uma célula já ocupada.
+Reconhecimento em vez de Memorização
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Interface intuitiva com botões claros e autoexplicativos.
+Estética e Design Minimalista
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Layout limpo, com foco apenas nos elementos essenciais para o jogo.
