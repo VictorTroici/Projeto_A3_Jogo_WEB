@@ -79,9 +79,5 @@ Certifique-se de ter o Node.js instalado em sua máquina.
 3. O jogo alternará entre os jogadores automaticamente.
 4. Use os botões de controle para reiniciar o jogo ou avançar para uma nova rodada.
 
----
-
-## **Agradecimentos**
-Este projeto foi desenvolvido como parte de uma atividade acadêmica. Agradecemos aos professores e colegas pelo suporte e feedback ao longo do desenvolvimento.
 
 
